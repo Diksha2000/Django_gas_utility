@@ -1,0 +1,22 @@
+{% extends 'consumer/base.html' %}
+
+{% block header %}
+<header style="background-color: #9b0b0b; color: white; padding: 10px 0; text-align: center;">
+    <h1>Gas Utility Company</h1>
+</header>
+{% endblock %}
+
+{% block content %}
+<section style="background-color: #f8f8f8; padding: 20px; text-align: center;">
+    <h2 style="color: #333; font-size: 28px;">Welcome to Gas Utilities</h2>
+    <p style="color: #666; font-size: 18px;">Explore our services and manage your account online.</p>
+    <a href="{% url 'consumer:submit_request' %}" style="background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Submit Request</a>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer style="background-color: #333; color: white; padding: 10px 0; text-align: center;">
+    <p>&copy; 2023 Gas Utility Company. All rights reserved.</p>
+</footer>
+{% endblock %}
+
